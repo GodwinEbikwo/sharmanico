@@ -30,7 +30,7 @@ export default function Header() {
         <div className={`${s.headerBoxAnimation} header-box_animation`}>
           <div className={s.headerInner}>
             <aside>
-              <Link href="/">
+              <Link href="/" passHref>
                 <h5 className={s.headerLogoTitle}>NS</h5>
               </Link>
             </aside>
