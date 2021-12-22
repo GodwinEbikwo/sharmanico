@@ -95,3 +95,20 @@ export const logoReveal = {
     transition: { duration: 0.8, ease: [0.77, 0, 0.175, 1] },
   },
 };
+
+export const menuInOut = {
+  initial: { y: "110%", opacity: 0 },
+  enter: {
+    y: "0%",
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: [0.83, 0, 0.17, 1],
+    },
+  },
+  exit: {
+    y: "110%",
+    opacity: 0,
+    transition: { duration: 0.45, ease: [0.83, 0, 0.17, 1] },
+  },
+};
