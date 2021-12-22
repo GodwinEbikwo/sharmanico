@@ -1,0 +1,20 @@
+.footerContainer {
+  position: relative;
+  padding: var(--spacing-lg) var(--px-2);
+}
+
+.footerInner {
+  margin-bottom: var(--spacing-lg);
+}
+
+.footerLargeTitle {
+  font-size: 49vw;
+  line-height: 0.8;
+  letter-spacing: -0.065em;
+  padding-bottom: 0;
+  user-select: none;
+  pointer-events: none;
+  white-space: nowrap;
+  /* font-family: var(--font-2); */
+  text-transform: capitalize;
+}

@@ -1,0 +1,43 @@
+.banner_container {
+  position: relative;
+  min-height: 130vh;
+}
+
+.banner_img_box {
+  overflow: hidden;
+  position: absolute;
+}
+
+.banner_img_box1 {
+  left: 10%;
+  top: 22%;
+}
+
+.banner_img_box2 {
+  left: 68%;
+  top: 57%;
+}
+
+.banner_title {
+  line-height: 1;
+  letter-spacing: var(--ls-lg);
+  font-size: 7vw;
+}
+
+.banner_services_left {
+  position: absolute;
+  top: 80vh;
+  left: 15%;
+}
+
+.banner_services_right {
+  position: absolute;
+  top: 90vh;
+  left: 67%;
+  padding-top: 10rem;
+}
+
+.banner_services_title {
+  font-family: var(--font-2);
+  letter-spacing: var(--ls-lg);
+}

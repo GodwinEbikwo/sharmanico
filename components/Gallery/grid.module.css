@@ -1,0 +1,29 @@
+.gridContainer {
+  position: relative;
+  padding: var(--golden-ratio) var(--px-2);
+  margin-bottom: var(--spacer);
+}
+
+.grid {
+  display: grid;
+  grid-column-gap: var(--spacer);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  /* .grid > li:nth-child(1) {
+    grid-column: 1/1;
+  }
+
+  .grid > li:nth-child(2n) {
+    grid-column: 1/1;
+  }
+
+  .grid > li:nth-child(2) {
+    grid-column: 4/8;
+  } */
+}

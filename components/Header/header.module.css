@@ -1,0 +1,26 @@
+.headerContainer {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /* color: var(--white);
+  mix-blend-mode: exclusion; */
+}
+
+.headerBoxAnimation {
+  transition: transform 0.4s ease;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--py-2) var(--px-2);
+  /* background-color: var(--bg); */
+}
+
+.headerLogoTitle {
+  font-family: var(--font-2);
+  letter-spacing: var(--ls-md);
+}

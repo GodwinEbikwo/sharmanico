@@ -1,0 +1,50 @@
+.workContainer {
+  position: relative;
+  padding: var(--golden-ratio) var(--px-2);
+  margin-bottom: var(--spacer);
+}
+
+.workTitle {
+  letter-spacing: var(--ls-lg);
+  font-family: var(--font-2);
+  font-size: 3vw;
+  margin-bottom: var(--spacing-lg);
+}
+
+.workGrid {
+  display: grid;
+  grid-column-gap: var(--spacer);
+  grid-row-gap: var(--spacer-double);
+  min-height: 70vh;
+}
+
+.workGrid > li {
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .workGrid {
+    grid-column-gap: 2vw;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .workGrid > li {
+    grid-column: 1/7;
+  }
+
+  .workGrid > li:not(:last-child) {
+    margin-bottom: calc(var(--spacer) + 8rem);
+  }
+
+  .workGrid > li:nth-child(2n + 1) {
+    grid-column: 1/5;
+  }
+
+  .workGrid > li:nth-child(4n) {
+    grid-column: 5/8;
+  }
+
+  .workGrid > li:nth-child(2n - 1) {
+    grid-column: 8/12;
+  }
+}
