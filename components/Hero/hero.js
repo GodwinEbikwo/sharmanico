@@ -7,13 +7,13 @@ import { revealInOut, fadeDelayHero } from "@/helpers/transitions";
 export default function Hero() {
   return (
     <section className={s.heroContainer}>
-      <div className={s.heroTitle}>
+      <h1 className={s.heroTitle}>
         <FancySpan>
           <m.span className="inline-block" variants={revealInOut}>
             Nicohlas Sharma
           </m.span>
         </FancySpan>
-      </div>
+      </h1>
       <div className={s.heroRow}>
         <aside className={s.heroRow_LEFT} data-scroll>
           <Image

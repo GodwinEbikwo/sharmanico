@@ -4,7 +4,7 @@ const Path = (props) => (
   <m.path
     fill="transparent"
     strokeWidth="1.2"
-    stroke="black"
+    stroke="var(--nav-toggle)"
     strokeLinecap="square"
     {...props}
   />
@@ -15,6 +15,7 @@ export const MenuToggle = ({ toggle }) => (
     aria-label="menu toggle button"
     onClick={toggle}
     className="cursor-pointer"
+    style={{ marginTop: "1rem", zIndex: "4" }}
   >
     <svg width="24" height="24" viewBox="0 0 23 23">
       <Path

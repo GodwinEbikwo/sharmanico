@@ -2,7 +2,6 @@
   letter-spacing: var(--ls-lg);
   line-height: 1;
   max-width: 10ch;
-  font-size: 5vw;
   text-align: center;
   margin-bottom: var(--spacing-lg);
 }

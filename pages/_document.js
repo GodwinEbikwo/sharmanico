@@ -6,6 +6,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          {/* <link rel="stylesheet" href="https://use.typekit.net/jpj8own.css" /> */}
           <link
             rel="preload"
             href="/fonts/EditorialNew-Ultralight.woff2"

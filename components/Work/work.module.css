@@ -5,10 +5,7 @@
 }
 
 .workTitle {
-  letter-spacing: var(--ls-lg);
-  font-family: var(--font-2);
-  font-size: 3vw;
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
 }
 
 .workGrid {

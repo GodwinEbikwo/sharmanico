@@ -21,7 +21,7 @@
 .banner_title {
   line-height: 1;
   letter-spacing: var(--ls-lg);
-  font-size: 7vw;
+  font-size: var(--size-1000);
 }
 
 .banner_services_left {

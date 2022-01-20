@@ -12,6 +12,22 @@ export const fade = {
   },
 };
 
+export const enterUp = {
+  initial: { opacity: 0, y: 130 },
+  enter: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      ease: [0.215, 0.61, 0.355, 1],
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.4 },
+  },
+};
+
 export const revealInOut = {
   initial: {
     y: "110%",
@@ -31,6 +47,25 @@ export const revealInOut = {
   exit: {
     y: "110%",
     transition: { ease: [0.77, 0, 0.175, 1] },
+  },
+};
+
+export const revealIn = {
+  initial: {
+    y: "110%",
+    opacity: 0,
+  },
+  enter: {
+    y: "0%",
+    opacity: 1,
+    transition: {
+      duration: 1.2,
+      ease: [0.165, 0.84, 0.44, 1],
+    },
+  },
+  exit: {
+    y: "110%",
+    transition: { ease: [0.165, 0.84, 0.44, 1], duration: 0.6 },
   },
 };
 

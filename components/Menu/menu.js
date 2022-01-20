@@ -28,18 +28,8 @@ export default function Menu() {
         exit="exit"
         variants={variantsAni}
       >
-        <nav className="flex flex-wrap">
-          <ul>
-            <List
-              a11y="go to shop page"
-              href="/"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              <m.div variants={menuInOut} className="menu_list-title">
-                Shop
-              </m.div>
-            </List>
-
+        <nav className="flex flex-wrap menu_container">
+          <ul className="menu_hover">
             <List
               a11y="go to home page"
               href="/"
@@ -59,10 +49,30 @@ export default function Menu() {
                 About
               </m.div>
             </List>
+
+            <List
+              a11y="go to contact page"
+              href="/"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <m.div variants={menuInOut} className="menu_list-title">
+                Contact
+              </m.div>
+            </List>
+
+            <List
+              a11y="go to site-credits page"
+              href="/"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              <m.div variants={menuInOut} className="menu_list-title">
+                Site Credits
+              </m.div>
+            </List>
           </ul>
         </nav>
 
-        <footer>
+        {/* <footer>
           <h5>
             <FancySpan>
               <m.div variants={menuInOut} className="text-uppercase">
@@ -70,7 +80,7 @@ export default function Menu() {
               </m.div>
             </FancySpan>
           </h5>
-        </footer>
+        </footer> */}
       </m.div>
     </Div100vh>
   );

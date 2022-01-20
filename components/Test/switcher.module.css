@@ -1,0 +1,19 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  justify-content: centers;
+  width: 2rem;
+  height: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.switcher::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background: var(--white);
+}

@@ -20,3 +20,23 @@ export default function Landing({ src }) {
     </Div100vh>
   );
 }
+
+export function LandingTwo( ) {
+  return (
+    <>
+      <section data-scroll>
+        <div data-scroll>
+          <Image
+            className="a-img"
+            src="https://res.cloudinary.com/godwinebikwo/image/upload/v1627453729/jason-wang-NxAwryAbtIw-unsplash_ltdiyg.jpg"
+            alt="clay"
+            width={1920}
+            height={1080}
+            quality="100"
+            loading="eager"
+          />
+        </div>
+      </section>
+    </>
+  );
+}

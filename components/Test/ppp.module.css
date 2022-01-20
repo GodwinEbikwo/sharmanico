@@ -1,0 +1,86 @@
+.pp_container {
+  position: relative;
+  padding: var(--golden-ratio) var(--px-2);
+  margin-bottom: var(--spacer);
+}
+
+.pp_Grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0.5em;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 990px) {
+  .pp_Grid {
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    min-height: auto;
+    overflow-x: hidden;
+    grid-template-areas: "left left left center center center center center center center right right";
+  }
+}
+
+.pp_Grid_Left {
+  padding: 1rem 0;
+}
+
+.pp_Grid_Left_Button {
+  padding: 0.5rem 1rem;
+  background-color: tomato;
+  width: 80%;
+  text-align: left !important;
+}
+
+.pp_Grid_Center {
+  padding: 1rem 0;
+}
+
+.pp_Grid_Right {
+  padding: 1rem 0;
+}
+
+@media (min-width: 1440px) {
+  .pp_Grid_Left {
+    padding: 1rem 0;
+    grid-area: left;
+  }
+
+  .pp_Grid_Left_Button {
+    background-color: var(--black);
+    width: 80%;
+    color: #fff;
+  }
+
+  .pp_Grid_Center {
+    padding: 1rem 0;
+    display: grid;
+    place-content: center;
+    grid-area: center;
+  }
+
+  .pp_Grid_Right {
+    padding: 1rem 0;
+    grid-area: right;
+  }
+}
+
+.pp_img_grid {
+  position: relative;
+  margin-bottom: 1.5rem;
+  background-image: linear-gradient(
+    to left bottom,
+    #f3f3f3,
+    #f1f1f1,
+    #eff0ef,
+    #eeeeee,
+    #ececec
+  );
+}
+
+@media (min-width: 990px) {
+  .pp_img_grid {
+    width: 600px;
+    height: 600px;
+  }
+}

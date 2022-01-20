@@ -1,14 +1,15 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import s from "./Test/switcher.module.css";
 
 const themes = [
   {
-    title: "Light Mode",
+    title: "light Mode",
     name: "light",
   },
   {
-    title: "Pink Mode",
-    name: "pink",
+    title: "dark Mode",
+    name: "dark",
   },
 ];
 
@@ -30,18 +31,10 @@ const ThemeSwitch = () => {
 
   return (
     <button
-      className="cursor-pointer"
       onClick={() => setTheme(nextTheme.name)}
       aria-label={`Change theme to ${nextTheme.title}`}
-    >
-      <div
-        aria-label={currentTheme.title}
-        className="text-uppercase"
-        style={{ color: "inherit" }}
-      >
-        {currentTheme.title}
-      </div>
-    </button>
+      className={s.switcher}
+    ></button>
   );
 };
 

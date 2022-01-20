@@ -1,6 +1,6 @@
 import Div100vh from "react-div-100vh";
 import { m, LazyMotion, domAnimation } from "framer-motion";
-import { logoTransform, logoReveal } from "@/helpers/transitions";
+import { logoReveal } from "@/helpers/transitions";
 
 const Loader = () => {
   return (
@@ -23,6 +23,7 @@ const Loader = () => {
           height="100%"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
+          style={{ backgroundColor: "var(--loader-bg)" }}
         >
           <path
             className="overlay__path"

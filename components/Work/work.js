@@ -50,7 +50,7 @@ function WorkCard({ labelOne }) {
 export default function Work() {
   return (
     <section className={s.workContainer} data-scroll>
-      <div className={s.workTitle}>Selected Work</div>
+      <h1 className={s.workTitle}>Selected Work</h1>
       <ul className={s.workGrid} data-scroll>
         {workData.map((label, i) => (
           <WorkCard key={i} labelOne={label.labelOne} />
